@@ -7,12 +7,21 @@
    "source": [
     "# PA1 - Introduction to Python\n",
     "### Terrado, Luke Nelson\n",
-    "### 2ECE-A"
+    "### 2ECE-A\n",
+    "-------------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c6bccc2-4608-4699-a524-168e721125a2",
+   "metadata": {},
+   "source": [
+    "### Problem A"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 1,
    "id": "f3f05042-2c3f-4b4d-a087-794616bdf22f",
    "metadata": {},
    "outputs": [
@@ -20,25 +29,33 @@
      "name": "stdin",
      "output_type": "stream",
      "text": [
-      "Give word:  python\n"
+      "Give word:  Luke\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "ythonp\n"
+      "ukeL\n"
      ]
     }
    ],
    "source": [
     "# Rotate Word Problem\n",
-    "def rotate_word(word):\n",
-    "    print(input_data[1:] + input_data[0])\n",
+    "def rotate_word(word): #defining the function\n",
+    "    print(input_data[1:] + input_data[0]) #print the expected output with the first letter at the end\n",
     "\n",
-    "input_data = input('Give word: ')\n",
+    "input_data = input('Give word: ') #asking for a user input\n",
     "\n",
-    "rotate_word(input_data)"
+    "rotate_word(input_data) #Calling the function"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e5774ee1-7dfa-4003-ada5-17539c82103b",
+   "metadata": {},
+   "source": [
+    "### Problem B"
    ]
   },
   {
@@ -65,16 +82,24 @@
    ],
    "source": [
     "# Make Username Problem\n",
-    "def make_username(first_name, last_name):\n",
-    "    lower_first = first.lower()\n",
-    "    lower_last = last.lower()\n",
-    "    full_name = \".\".join([lower_first, lower_last])\n",
-    "    print(full_name.replace(\" \", \"\"))\n",
+    "def make_username(first_name, last_name): #defining the function with two parameter\n",
+    "    lower_first = first.lower() \n",
+    "    lower_last = last.lower() # Lowercase of both first and last name\n",
+    "    full_name = \".\".join([lower_first, lower_last]) #separating first and last with a \".\"\n",
+    "    print(full_name.replace(\" \", \"\")) #replacing all the spaces with a blank to remove the space\n",
     "\n",
-    "first = input(\"Input your first name: \")\n",
-    "last = input(\"Input your last name: \")\n",
+    "first = input(\"Input your first name: \") #asking for the user's first name\n",
+    "last = input(\"Input your last name: \")  #asking for the user's last name\n",
     "\n",
-    "make_username(first, last)"
+    "make_username(first, last) #Calling the function"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8dc0fb98-52ae-4eb6-98c4-41923448c3f6",
+   "metadata": {},
+   "source": [
+    "### Problem C"
    ]
   },
   {
@@ -100,16 +125,16 @@
    ],
    "source": [
     "# Bookend Swap Problem\n",
-    "def swap_bookends(items):\n",
-    "    first = List[-1]\n",
-    "    middle = List[1:-1]\n",
-    "    last = List[0]\n",
-    "    print(first, *middle, last)\n",
+    "def swap_bookends(items): #defining the function\n",
+    "    first = List[-1] #variable first with the last element of the list\n",
+    "    middle = List[1:-1] #variable middle with all the element in between of the first and last element\n",
+    "    last = List[0] #variable last with the first element\n",
+    "    print(first, *middle, last) #print the updated list\n",
     "\n",
-    "user_input = input(\"Write down your list: \")\n",
-    "List = user_input.split()\n",
+    "user_input = input(\"Write down your list: \") #asking for a user input\n",
+    "List = user_input.split() #converting the user input to a list\n",
     "\n",
-    "swap_bookends(List)"
+    "swap_bookends(List) #Calling the function"
    ]
   }
  ],
