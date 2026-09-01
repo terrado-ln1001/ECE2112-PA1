@@ -61,3 +61,9 @@ List = user_input.split()
 swap_bookends(List)
 ```
 The program uses the swap_bookends function, which accepts a parameter named items. Outside the function, user input is stored in a variable and converted into a list before being passed to the function. Inside, the list is unpacked into three variables: first (containing the last element), last (containing the first element), and middle (containing the remaining elements). Finally, the function prints the updated list.
+
+
+## Changes
+1. Added detailed information about the problems and an explanation of each program (09/01/2026)
+2. Uploaded the Jupyter Notebook (09/01/2026)
+3. Updated the README with program details and changes (09/01/2026)
