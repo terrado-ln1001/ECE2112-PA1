@@ -1,4 +1,6 @@
 # Introduction to Python
+#### Terrado, Luke Nelson R.
+#### 2ECE-A
 ## Description
 This lesson is about learning the basic code and functions in Python. It also shows how to use them to make simple programs.
 
@@ -67,3 +69,4 @@ The program uses the swap_bookends function, which accepts a parameter named ite
 1. Added detailed information about the problems and an explanation of each program (09/01/2026)
 2. Uploaded the Jupyter Notebook (09/01/2026)
 3. Updated the README with program details and changes (09/01/2026)
+4. Included the name and the section of the creator (09/08/2026)
